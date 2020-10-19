@@ -22,7 +22,7 @@ void saveHuMoments(std::ofstream& outputFile, const std::string& picturePath) {
     cv::HuMoments(moments, huMoments);
 
     for (double huMoment : huMoments) {
-        outputFile << -1 * copysign(1.0, huMoment) * log10(abs(huMoment)) << ";";
+        outputFile << huMoment << ";";
     }
 
     outputFile << std::endl;
