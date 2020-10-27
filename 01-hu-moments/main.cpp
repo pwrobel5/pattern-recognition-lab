@@ -3,7 +3,7 @@
 #include <filesystem>
 #include <regex>
 #include <fstream>
-#include <opencv4/opencv2/opencv.hpp>
+#include <opencv2/opencv.hpp>
 
 std::string extractFileName(const std::string& filePath) {
     const std::regex PICTURE_FILENAME_REGEX("[^/]*\\.png");
