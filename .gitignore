@@ -110,3 +110,6 @@ fabric.properties
 
 venv/
 __pychache__/
+04-convolutional-nn/urls/
+04-convolutional-nn/pictures/
+
