@@ -1,10 +1,10 @@
-from imutils import paths
-import requests
-import cv2
 import os
 
+import cv2
+import requests
+from imutils import paths
 
-RESIZE_DIMENSION = (400, 400)
+from constants import PICTURE_DIMENSION
 
 
 def download_from_file(file_path, output_path):
@@ -39,7 +39,7 @@ def check_and_resize(output_path):
             if image is None:
                 delete = True
             else:
-                image = cv2.resize(image, RESIZE_DIMENSION)
+                image = cv2.resize(image, PICTURE_DIMENSION)
                 cv2.imwrite(image_path, image)
         except:
             print("Error with opening file {}".format(image_path))
