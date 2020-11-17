@@ -1,2 +1,4 @@
 pkg-resources==0.0.0
 opencv-python~=4.4.0.46
+numpy~=1.19.4
+scipy~=1.5.4
