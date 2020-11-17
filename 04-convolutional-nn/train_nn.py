@@ -40,7 +40,7 @@ def train_nn(initial_epochs, iteration):
 
     base_model.trainable = False
     global_average_layer = tf.keras.layers.GlobalAveragePooling2D()
-    prediction_layer_out = tf.keras.layers.Dense(4, activation="softmax")
+    prediction_layer_out = tf.keras.layers.Dense(3, activation="softmax")
 
     inputs = tf.keras.Input(shape=IMAGE_SHAPE)
     x = preprocess_input(inputs)
