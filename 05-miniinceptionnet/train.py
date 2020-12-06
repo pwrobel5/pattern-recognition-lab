@@ -83,7 +83,7 @@ def train_model(model, output_suffix):
     zipped_results = zip(train_losses, train_accuracies, val_losses, val_accuracies)
 
     output_accuracy = open("accuracy_{}.txt".format(output_suffix), "w")
-    for index, train_loss, train_accuracy, val_loss, val_accuracy in enumerate(zipped_results):
+    for index, (train_loss, train_accuracy, val_loss, val_accuracy) in enumerate(zipped_results):
         output_accuracy.write("{} {} {} {} {}\n".format(index + 1, train_loss, train_accuracy, val_loss, val_accuracy))
     output_accuracy.close()
 
