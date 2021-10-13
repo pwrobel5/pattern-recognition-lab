@@ -113,5 +113,7 @@ __pychache__/
 04-cnn-introduction/urls/
 04-cnn-introduction/pictures/
 04-cnn-introduction/models/
+06-gan/pictures/
+06-gan/visualisation/
 *.pyc
 
